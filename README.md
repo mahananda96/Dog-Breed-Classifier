@@ -32,4 +32,4 @@ This project is part of Udacity Data Scientist Nanodegree Program. Here we are f
 	The algo is detecting dog image correctly.
 	The algo is detecting human image correctly.
 	The algo gave a 70.2153% test accuracy
-	Blog link: 
+	Blog link: https://mahananda96.medium.com/udacity-data-scientist-nanodegree-capstone-project-dog-breed-classifier-project-3bff0c6cbd78
