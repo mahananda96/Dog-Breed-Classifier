@@ -7,8 +7,10 @@
 4) Data Description
 5) File Description
 6) Algorithm and Implementation
-7) Results
-8) Improvements
+7) Model Evaluation
+8) Justification
+9) Results
+10) Improvements and Refinement
 9) Acknowledgements
 
 
@@ -50,14 +52,25 @@ dog_breed_algorithm function contains the final algorithm which execute the whol
 		If it is detected as human, then detect the dog breed that closely resemble to it.
 	Step 3: If it neither detected as human or dog, then show that message. 
 
+### Model Evaluation
+Here we have used CNN with VGG19 BottleNeck Feature to identify the the 133 dog breeds. 
+	1) One GlobalAveragePooling2D layer is used to get the VGG output.
+	2) One dense layer is used using relu activation and 200 nodes.
+	3) As the size of dataset is small, we have used a Dropout Layer.
+	4) Lastly one more Dense Layer with Softmax 
+The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy on test data.
+
+### Justifiaction
+	Adding a layer of Relu Activation has substantially increased the metric(Accuracy) of the model. Since, the dataset is small, there was a chance of overfitting which can decrease the performance for unknown data. Thus we have used a dropout rate of 30%. Lastly we preferred 20 epochs for training.
 
 ### Results
 	The algo is detecting dog image correctly.
 	The algo is detecting human image correctly.
 	The algo gave a 70.2153% test accuracy
+	Github link: https://github.com/mahananda96/Dog-Breed-Classifier
 	Blog link: https://mahananda96.medium.com/udacity-data-scientist-nanodegree-capstone-project-dog-breed-classifier-project-3bff0c6cbd78
-	
-### Improvements
+
+### Improvements and Refinements
 	More classification among dog breed will be nice. This can be done by feeding it with more variation in train dataset. Particularly classification of special and minute features as tere are breeds with almost 805 simmilarity in apearance.
 	
 ### Acknowledgements:
