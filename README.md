@@ -2,26 +2,34 @@
 
 ### Table of Contents:
 1) Project Overview
-2) Problem Statement
-3) Libraries
-4) Data Description
-5) File Description
-6) Algorithm and Implementation
-7) Model Evaluation
-8) Justification
-9) Results
-10) Improvements and Refinement
-9) Acknowledgements
+2) Project Motivation
+3) Problem Statement
+4) 
+5) Libraries
+6) Data Description
+7) File Description
+8) Algorithm and Implementation
+9) Model Evaluation
+10) Justification
+11) Results
+12) Improvements and Refinement
+13) Acknowledgements
 
 
 ### Project Overview:
 This project is part of Udacity Data Scientist Nanodegree Program and is one of the most popular Udacity projects across machine learning and artificial intellegence nanodegree programs. The goal is to classify images of dogs according to their breed. Here we are preparing a model to identify dog faces, human faces and their breeds also. 
+
+### Project Motivation
+Face Recognition or Image processing is a significant skill needed in today's industry. Here Udacity honoured us by giving a chance to implement such a practical project for our final project. Moreover besides recognition of picture as dog or human, classifying them into breeds is definately also a source of sure Motivation
 
 ### Problem Statement :
 Here we are focussing to use CNN to detect dog images.
 	1) In this, the model should detect that the input image is of a dog or human or none of them. 
 	2) If it is detected as dog, than detect the breed of dog.
 	3) If it is detected as human, then detect the breed of dog which closely resemble to that image.
+	
+### Project Challenges:
+As a beginner to CNN, I felt breed classification is the most challenging part. But the throrouh guidance on that have truely helped. Plus variation on number of filters, drop rate and experimantation with them have signifcantly interesting.
 ### Libraries:
 The libraries used in this project are:
 	Keras: RestNet50 and Image function is ued from Keras.
