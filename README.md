@@ -61,7 +61,8 @@ Here we have used CNN with VGG19 BottleNeck Feature to identify the the 133 dog 
 The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy on test data.
 
 ### Justifiaction
-	Adding a layer of Relu Activation has substantially increased the metric(Accuracy) of the model. Since, the dataset is small, there was a chance of overfitting which can decrease the performance for unknown data. Thus we have used a dropout rate of 30%. Lastly we preferred 20 epochs for training.
+	Adding a layer of Relu Activation has substantially increased the metric(Accuracy) of the model. Since, the dataset is small, there was a chance 
+	of overfitting which can decrease the performance for unknown data. Thus we have used a dropout rate of 30%. Lastly we preferred 20 epochs for training.
 
 ### Results
 	The algo is detecting dog image correctly.
@@ -71,7 +72,8 @@ The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy 
 	Blog link: https://mahananda96.medium.com/udacity-data-scientist-nanodegree-capstone-project-dog-breed-classifier-project-3bff0c6cbd78
 
 ### Improvements and Refinements
-	More classification among dog breed will be nice. This can be done by feeding it with more variation in train dataset. Particularly classification of special and minute features as tere are breeds with almost 805 simmilarity in apearance.
+	More classification among dog breed will be nice. This can be done by feeding it with more variation in train dataset. Particularly 
+	classification of special and minute features as tere are breeds with almost 805 simmilarity in apearance.
 	
 ### Acknowledgements:
 	I sincerely acknowledgement udacity constant help and support in this project.
