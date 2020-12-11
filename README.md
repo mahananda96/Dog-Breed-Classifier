@@ -24,10 +24,10 @@ Here we are focussing to use CNN to detect dog images.
 	3) If it is detected as human, then detect the breed of dog which closely resemble to that image.
 ### Libraries:
 The libraries used in this project are:
-	Keras
-	OpenCV
-	Matplotlib
-	Numpy
+	Keras: RestNet50 and Image function is ued from Keras.
+	OpenCV: OpenCV's implementation of Haar feature-based cascade classifiers is used for human face detection.
+	Matplotlib: It is using for visualization of the dog dataset w.r.t Dog Breeds.
+	Numpy: This is used to make arrays of the dog and human datasets.
 
 ### Data Description:
 There are following datasets available for this Model:
@@ -39,10 +39,18 @@ There are following datasets available for this Model:
 	Human Images :- There is a dataset with 13233 images in it.
 
 ### File Description:
-	dog_app.ipynb: Jupyter notebook containing the algorithm and process used to create it.
-	dog_app.html: A copy of dog_app.ipynb in html format.
-	Haarcascades folder: Xml file for use with the OpenCv face detector class.
-	Image Dataset : Images in jpg and jpeg format used to test the algorithm's predictions.
+Below are main foleders/files for this project:
+
+haarcascades
+haarcascade_frontalface_alt.xml: a pre-trained face detector provided by OpenCV
+bottleneck_features
+DogVGG19Data.npz: pre-computed the bottleneck features for VGG-19 using dog image data including training, validation, and test
+saved_models
+VGG19_model.json: model architecture saved in a json file
+weights.best.VGG19.hdf5: saved model weights with best validation loss
+dog_app.ipynb: a notebook used to build and train the dog breeds classification model
+extract_bottleneck_features.py: functions to compute bottleneck features given a tensor converted from an image
+images: a few images to test the model manually
 	
 ### Algorithm and Implementation
 dog_breed_algorithm function contains the final algorithm which execute the whole functionality. 
