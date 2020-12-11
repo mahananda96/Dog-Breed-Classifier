@@ -8,6 +8,8 @@
 5) File Description
 6) Algorithm and Implementation
 7) Results
+8) Improvements
+9) Acknowledgements
 
 
 ### Project Overview:
@@ -54,3 +56,9 @@ dog_breed_algorithm function contains the final algorithm which execute the whol
 	The algo is detecting human image correctly.
 	The algo gave a 70.2153% test accuracy
 	Blog link: https://mahananda96.medium.com/udacity-data-scientist-nanodegree-capstone-project-dog-breed-classifier-project-3bff0c6cbd78
+	
+### Improvements
+	More classification among dog breed will be nice. This can be done by feeding it with more variation in train dataset. Particularly classification of special and minute features as tere are breeds with almost 805 simmilarity in apearance.
+	
+### Acknowledgements:
+	I sincerely acknowledgement udacity constant help and support in this project.
