@@ -80,7 +80,8 @@ The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy 
 	Blog link: https://mahananda96.medium.com/udacity-data-scientist-nanodegree-capstone-project-dog-breed-classifier-project-3bff0c6cbd78
 
 ### Improvements and Refinements
-	More classification among dog breed will be nice. This can be done by feeding it with more variation in train dataset. Particularly 
+	Here we have used only 133 dog breeds to classify. Many dog breed are their whose facial features resemble each other closely. So more classification among 
+	dog breed will be nice which analyzez unique features in each breed. This can be done by feeding it with more variation in train dataset. Particularly 
 	classification of special and minute features as tere are breeds with almost 805 simmilarity in apearance.
 	
 ### Acknowledgements:
