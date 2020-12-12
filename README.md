@@ -57,8 +57,7 @@ There are following datasets available for this Model:
 	Human Images :- There is a dataset with 13233 images in it.
 
 ### Data Preprocessing
-Not much Preprocessing is done in this dataset. We have only loaded the data from Udacity Workspace. Dog Data was already divided into train, Validation and Test Data.
-Only we performed little normalization on the image data and "to_categirical" function on the targets.
+Not much Preprocessing is done in this dataset. We have only loaded the data from Udacity Workspace. Dog Data was already divided into train, Validation and Test Data. Only we performed little normalization on the image data and "to_categorical" function on the targets. 
 
 ### File Description:
 Below are main foleders/files for this project:
@@ -81,7 +80,8 @@ dog_breed_algorithm function contains the final algorithm which execute the whol
 	Step 2: If it is not detected as a dog face, then "face_detector" is detecting it as a human face or not.Here we have used CV2 implementation of Haar feature-based cascade classifiers to detect the human faces
 		If it is detected as human, then detect the dog breed that closely resemble to it.
 	Step 3: If it neither detected as human or dog, then show that message. 
-As a beginner to CNN, I felt breed classification is the most challenging part. But the  guidance on that have truely helped. Plus experimentation on number of filters also saw increase in accuracy. As the dataset was small, overfitting was a issue in that case. Using a Dropout layer with droping rate of 30% was added to prevent overfitting.
+
+As a beginner to CNN, I felt breed classification is the most challenging part. But the  guidance on that have truely helped. Plus experimentation on number of filters also saw increase in accuracy. As the dataset was small, overfitting was a issue in that case. Using a Dropout layer with droping rate of 30% was added to prevent overfitting. Moreover changing the activation method of last layer to softmax  helped in reaching the goal accuracy.
 
 ### Model Evaluation
 Here we have used CNN with VGG19 BottleNeck Feature to identify the the 133 dog breeds. 
