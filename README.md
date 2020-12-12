@@ -100,11 +100,14 @@ The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy 
 	The algo is detecting human image correctly.
 	The algo gave a 70.2153% test accuracy.
 	Thus the total algorithm is solving the three statements of the problem statement nicely. It is taking an image as input, doing classification as dog or human or neither 	  of two and then the breed.
+	
 	Step 1: Firstly we are using "dog_detector" model to detect is it a dog face or not. In this RestNet50 is used to do the detection.
-	 If it comes dog, then it will detect its breed.
- 	Step 2: If it is not detected as a dog face, then "face_detector" is detecting it as a human face or not.Here we have used CV2 implementation of Haar feature-based 		cascade classifiers to detect the human faces
- 	If it is detected as human, then detect the dog breed that closely resemble to it.
- 	Step 3: If it neither detected as human or dog, then show that message.
+		If it comes dog, then it will detect its breed.
+	Step 2: If it is not detected as a dog face, then "face_detector" is detecting it as a human face or not.Here we have used CV2 implementation of Haar feature-based cascade classifiers to detect the human faces
+		If it is detected as human, then detect the dog breed that closely resemble to it.
+	Step 3: If it neither detected as human or dog, then show that message.
+	
+As a beginner to CNN, I felt breed classification is the most challenging part. But the  guidance on that have truely helped. Plus experimentation on number of filters also saw increase in accuracy. As the dataset was small, overfitting was a issue in that case. Using a Dropout layer with droping rate of 30% was added to prevent overfitting.
 
 ### Discussion
 	When we used VGG16 with two layers and softmax activation we got near about 44.6% accuracy.
