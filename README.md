@@ -58,6 +58,7 @@ There are following datasets available for this Model:
 
 ### Data Preprocessing
 Not much Preprocessing is done in this dataset. We have only loaded the data from Udacity Workspace. Dog Data was already divided into train, Validation and Test Data.
+Only we performed little normalization on the image data and "to_categirical" function on the targets.
 
 ### File Description:
 Below are main foleders/files for this project:
@@ -80,6 +81,7 @@ dog_breed_algorithm function contains the final algorithm which execute the whol
 	Step 2: If it is not detected as a dog face, then "face_detector" is detecting it as a human face or not.Here we have used CV2 implementation of Haar feature-based cascade classifiers to detect the human faces
 		If it is detected as human, then detect the dog breed that closely resemble to it.
 	Step 3: If it neither detected as human or dog, then show that message. 
+As a beginner to CNN, I felt breed classification is the most challenging part. But the  guidance on that have truely helped. Plus experimentation on number of filters also saw increase in accuracy. As the dataset was small, overfitting was a issue in that case. Using a Dropout layer with droping rate of 30% was added to prevent overfitting.
 
 ### Model Evaluation
 Here we have used CNN with VGG19 BottleNeck Feature to identify the the 133 dog breeds. 
@@ -96,7 +98,13 @@ The aim was to attain atleast 66% acurracy. This model gave a 70.2% of accuracy 
 ### Results
 	The algo is detecting dog image correctly.
 	The algo is detecting human image correctly.
-	The algo gave a 70.2153% test accuracy
+	The algo gave a 70.2153% test accuracy.
+	Thus the total algorithm is solving the three statements of the problem statement nicely. It is taking an image as input, doing classification as dog or human or neither 	  of two and then the breed.
+	Step 1: Firstly we are using "dog_detector" model to detect is it a dog face or not. In this RestNet50 is used to do the detection.
+	 If it comes dog, then it will detect its breed.
+ 	Step 2: If it is not detected as a dog face, then "face_detector" is detecting it as a human face or not.Here we have used CV2 implementation of Haar feature-based 		cascade classifiers to detect the human faces
+ 	If it is detected as human, then detect the dog breed that closely resemble to it.
+ 	Step 3: If it neither detected as human or dog, then show that message.
 
 ### Discussion
 	When we used VGG16 with two layers and softmax activation we got near about 44.6% accuracy.
